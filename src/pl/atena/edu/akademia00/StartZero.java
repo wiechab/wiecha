@@ -58,8 +58,54 @@ public class StartZero {
 		
 		final double AAA_CONST = 1.9; //STA£A - standardowo stosujemy nazwy z wielkich liter dla porz¹dku
 		
+		System.out.println(Zwierzaki.KOT);
+		
+		//reszta z dzielenia
+		System.out.println(500%3);
+		
+		int liczba = 100;
+		liczba -=10;
+		liczba +=90;
+		liczba ++;
+		liczba --;
+		
+		
+		//tablicca stringów, indeksuje siê od 0
+		
+		String[] table = {"jeden","dwa","trzy" };
+		int indeks = 0;
+		System.out.println(table[indeks]); //zwraca  "jeden"
+		System.out.println(table[indeks++]);//zwraca te¿ "jeden" bo incrementacja odbywa siê ju¿ po wyœwietleniu informacji
+		System.out.println(table[indeks]); // zwraca "dwa"
+		
+		System.out.println(table[++indeks]); //zwraca "trzy", incrementacja przed  wyœwietleniu informacji
+		
+		
+	//dzia³ania matematyczne - klasa Math
+		
+		int test = 1000000000 * 3; //uwaga ta sk³¹dnia nie chroni nas przed b³êdem przepe³nienia wartoœci;  
+		//zwraca wartoœæ z kapelusza -1294967296
+		System.out.println(test);
+		
+		//int test_2 = Math.multiplyExact(1000000000, 3); //zwraca exeption - czyli chroni nas przed b³êdami
+		
+		//konwersje typów
+		
+		int ii = 55;
+		double dd = 2.55 * ii ;
+		
+		char cc = 'J' + 1; //zwraca K  to jest prawid³owe dzia³anie
+		System.out.println(cc) ;
+		
+		int ii2 = 'J' + 1;
+		
+		System.out.println(ii2) ;
+		
+		
+		
 		
 		
 	}
+		
 
 }
