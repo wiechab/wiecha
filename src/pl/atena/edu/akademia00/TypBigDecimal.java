@@ -36,6 +36,8 @@ public class TypBigDecimal {
 		BigInteger r4 = BigInteger.valueOf(100).gcd(BigInteger.valueOf(8));
 		
 		
+		
+		
 	}
 
 }
