@@ -141,6 +141,8 @@ public class Wejscie {
 		// int liczba = 0;
 		// String liczby = "" ;
 
+		System.out.println("TABLICZKA MNO¯ENIA wyniki w zakresie od 0 .. 100");
+		
 		for (int i = 0; i < 11; i++) {
 			// liczby = "" ;
 			for (int ii = 0; ii < 11; ii++) {
@@ -158,6 +160,19 @@ public class Wejscie {
 			}
 			System.out.println();
 		}
-
+		
+		//Sumowanie wartoœci parzystych z przedzia³u od 0..10
+		
+		int sum = 0;
+		System.out.println("Sumowanie wartoœci parzystych z przedzia³u od 0..10");
+		for (int i = 0; i < 11; i++) {
+			if (i %2 !=0) {
+				continue; //pomija krok idzie na pocz¹tek pêtli; break powoduje wyjœcie z pêtli, przerywa dzia³anie
+			}
+			sum += i;
+			System.out.println(i);
+		}
+		System.out.println();
+		System.out.println("Suma=" +sum);
 	}
 }
